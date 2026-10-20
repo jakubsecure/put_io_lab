@@ -18,6 +18,11 @@ public class Program {
                 System.exit(1);
             }
 
+	    if (quantity < 0){
+		    System.err.println("Błąd: liczba produktów nie może być ujemna.");
+		    System.exit(1);
+	    }
+
             double subtotal = quantity * unitPrice;
             double total = subtotal - discount;
             System.out.printf(Locale.ROOT, "Cena: %.2f%n", total);
