@@ -18,7 +18,7 @@ public class Program {
                 System.exit(1);
             }
 
-	    if (quantity < 0){
+	    if (quantity <= 0){
 		    System.err.println("Błąd: liczba produktów nie może być ujemna.");
 		    System.exit(1);
 	    }
