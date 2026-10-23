@@ -24,7 +24,7 @@ public class Program {
 	    }
 
             double subtotal = quantity * unitPrice;
-            double total = subtotal - discount;
+            double total = subtotal * ( 1 - discount / 100);
             System.out.printf(Locale.ROOT, "Cena: %.2f%n", total);
         } catch (NumberFormatException e) {
             System.err.println("Błąd: podaj liczbę całkowitą produktów oraz liczbową cenę i rabat.");
